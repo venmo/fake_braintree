@@ -12,6 +12,7 @@ module FakeBraintree
       set_unique_number_identifier
       set_debit
       set_durbin_regulated
+      set_prepaid
     end
 
     def create
@@ -174,6 +175,16 @@ module FakeBraintree
         @hash['durbin_regulated'] = 'Yes'
       else
         @hash['durbin_regulated'] = 'No'
+      end
+    end
+
+    def set_prepaid
+      fixture_prepaid_card = ['4500600000000061']
+
+      if fixture_prepaid_card.include? number
+        @hash['prepaid'] = 'Yes'
+      else
+        @hash['prepaid'] = 'No'
       end
     end
 
