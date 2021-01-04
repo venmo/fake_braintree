@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'activesupport', '~> 5.1'
   s.add_dependency 'braintree', '~> 2.32'
   s.add_dependency 'capybara', '~> 2.2'
+  s.add_dependency 'nokogiri', '~> 1.10.0'
   s.add_dependency 'sinatra', '1.4.8'
 
   s.add_development_dependency 'rake'
