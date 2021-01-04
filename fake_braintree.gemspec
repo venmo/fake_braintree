@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.2")
 
-  s.add_dependency 'capybara'
+  s.add_dependency 'capybara', '~> 2.18'
   s.add_dependency 'activesupport'
   s.add_dependency 'i18n'
   s.add_dependency 'sinatra'
